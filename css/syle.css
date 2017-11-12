@@ -1,0 +1,64 @@
+.header-container {
+  background-color: #ffffff;
+  border-color: #cccccc;
+  font-family: 'Georgia',times,"Times New Roman", serif;
+  position:relative;
+  left: 5%;
+  width: 960px;
+  height: 93px;
+}
+
+#name {
+  background-color: #4aaaa5;
+  float: left;
+  left: 0;
+  width: 253px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact {
+  float: right;
+  border-right-style:solid;
+  padding: 23px;
+  border-width: 1px;
+  height: 18px;
+}
+.portfolio {
+  float: right;
+  border-right-style:solid;
+  padding: 23px;
+  border-width: 1px;
+  height: 18px;
+}
+
+.About {
+  float: right;
+  border-right-style:solid;
+  padding: 23px;
+  border-width: 1px;
+  height: 18px;
+}
+
+body {
+  background-image:url("images/background.png");
+}
+
+.container{
+  width: 960px;
+  position:relative;
+  left: 5%;
+  background-color: #ffffff;
+}
+
+#About{
+  width: 650px;
+  padding: 33px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #dddddd;
+}
+
+#image{
+  float: left;
+}
