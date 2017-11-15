@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Basic-Portfolio</title>
+	<link rel="stylesheet"  type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -13,30 +15,38 @@
 
 			<!-- Creating a div container that will have my name in it-->
 
-			<div class="My-Name">
+			<div class="My-Name-Container">
 				<h1>Matthew Simon</h1>
 			</div>
 
 			<!-- Creating the nav to hold the top level nav elements-->
 
 			<nav>
-				<a href="index1.html" class="About-Nav">About</a>
-				<a href="portfolio.html" class="Portfolio-Nav">Portfolio</a>
-				<a href="Contact.html" class="Contact-Nav" >Contact</a>
+				<a cla href="index1.html" class="navigation About-Nav">About</a>
+				<a href="portfolio.html" class="navigation Portfolio-Nav">Portfolio</a>
+				<a href="Contact.html" class="navigation Contact-Nav" >Contact</a>
 			</nav>
 
 		</div>
 	</header>
-  <div class="body-container">
+
+	<!-- Creating a div for the body that will hold my content -->
+
+	<div class="body-container clearfix">
+
+		<!-- Creating a div that will contain the About me text and my image -->
+
+		<div class="Section-Header">
+
 
     <!-- Creating a div that will contain the form -->
 
-    <div id="Contact-Me">
+    <div class="Section-Header">
 
       <!-- Creating a section for the "About Me Header" -->
 
-      <section>
-        <h1>Contact]</h1>
+      <section class="Main-Content-Header">
+        <h1>Contact</h1>
       </section>
 
       <!-- Creating a form for the content of the contact me section -->
@@ -53,7 +63,7 @@
 
         <p>Email
           <br>
-          <input type="text" name="Email" maxlength="120" class="contact-email"/>
+          <input type="text" name="Email" maxlength="120" id="contact-email"/>
         </p>
 
         <!-- Adding the message Field to the form -->
@@ -64,38 +74,42 @@
         </p>
     </div>
 
-      <!-- Creating an aside for Connecting with me-->
+		<!-- Creating an aside for Connecting with me-->
 
-    <aside class="Connect">
+	<aside class="Connect">
 
-      <!-- Creating a section for the Connect with Me Text-->
+		<!-- Creating a section for the Connect with Me Text-->
 
-      <section>
-        <h1>Connect with Me</h1>
-      </section>
+		<section class="Main-Content-Header">
+			<h2>Connect with Me</h2>
+		</section>
 
-      <!-- Adding image for GitHub -->
+		<!-- Adding image for GitHub -->
 
-      <img src="images/github.png" width="58px" height="58px" id="github">
+		<section class="Connect-links">
+			<a href="https://github.com/mjsimon91">
+				<img src="images/github.png" width="58px" height="58px" id="github">
+			</a>
+			<!-- Adding image for LinkedIn -->
 
-      <!-- Adding image for LinkedIn -->
+			<a href="https://www.linkedin.com/in/matthew-simon-9bba3b29/">
+				<img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
+			</a>
+			<!-- Adding image for Stack Overflow -->
 
-      <img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
+			<a href="https://stackexchange.com/users/12198639/msimon">
+				<img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
+			</a>
 
-      <!-- Adding image for Stack Overflow -->
+	</aside>
 
-      <img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
+</div>
 
+<!-- Creating a footer -->
 
-    </aside>
+<footer>
+	<p>Copyright &copy; 2017 Matthew Simon</p>
+</footer>
 
-  </div>
-
-  <!-- Creating a footer -->
-
-  <footer>
-    <p>Copyright &copy; 2017 Matthew Simon</p>
-  </footer>
-
-  </body>
+</body>
 </html>

@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Basic-Portfolio</title>
+	<link rel="stylesheet"  type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -13,16 +15,16 @@
 
 			<!-- Creating a div container that will have my name in it-->
 
-			<div class="My-Name">
+			<div class="My-Name-Container">
 				<h1>Matthew Simon</h1>
 			</div>
 
 			<!-- Creating the nav to hold the top level nav elements-->
 
 			<nav>
-				<a href="index1.html" class="About-Nav">About</a>
-				<a href="portfolio.html" class="Portfolio-Nav">Portfolio</a>
-				<a href="Contact.html" class="Contact-Nav" >Contact</a>
+				<a cla href="index1.html" class="navigation About-Nav">About</a>
+				<a href="portfolio.html" class="navigation Portfolio-Nav">Portfolio</a>
+				<a href="Contact.html" class="navigation Contact-Nav" >Contact</a>
 			</nav>
 
 		</div>
@@ -30,32 +32,37 @@
 
 	<!-- Creating a div for the body that will hold my content -->
 
-	<div class="body-container">
+	<div class="body-container clearfix">
 
 		<!-- Creating a div that will contain the About me text and my image -->
 
-		<div id="About-Me">
+		<div class="Section-Header">
 
 			<!-- Creating a section for the "About Me Header" -->
 
-			<section>
+			<section class="Main-Content-Header">
 				<h1>About Me</h1>
 			</section>
 
 			<!-- Creating a section for the content of the about me section -->
 
-			<section>
+			<section class="Main-Content-Body">
 
 				<img src="images/IMG_0013.jpg" alt="Profile Image" width="232px" height="309px" id="Profile-Image">
 
-				<p>
+<!-- Creating a div to float all the text to the right of the image -->
+				<div class="Main-Content-Text">
 
-					Lorem Khaled Ipsum is a major key to success. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. The key to more success is to have a lot of pillows. Learning is cool, but knowing is better, and I know the key to success. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.
-				</p>
+					<p>
 
-				<p>
-					Wraith talk. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Look at the sunset, life is amazing, life is beautiful, life is what you make it. You smart, you loyal, you a genius. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. Bless up.
-				</p>
+						Lorem Khaled Ipsum is a major key to success. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. The key to more success is to have a lot of pillows. Learning is cool, but knowing is better, and I know the key to success. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.
+					</p>
+
+					<p>
+						Wraith talk. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Look at the sunset, life is amazing, life is beautiful, life is what you make it. You smart, you loyal, you a genius. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. Bless up.
+					</p>
+
+				</div>
 
 			</section>
 
@@ -67,22 +74,26 @@
 
 			<!-- Creating a section for the Connect with Me Text-->
 
-			<section>
-				<h1>Connect with Me</h1>
+			<section class="Main-Content-Header">
+				<h2>Connect with Me</h2>
 			</section>
 
 			<!-- Adding image for GitHub -->
 
-			<img src="images/github.png" width="58px" height="58px" id="github">
+			<section class="Connect-links">
+				<a href="https://github.com/mjsimon91">
+					<img src="images/github.png" width="58px" height="58px" id="github">
+				</a>
+				<!-- Adding image for LinkedIn -->
 
-			<!-- Adding image for LinkedIn -->
+				<a href="https://www.linkedin.com/in/matthew-simon-9bba3b29/">
+					<img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
+				</a>
+				<!-- Adding image for Stack Overflow -->
 
-			<img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
-
-			<!-- Adding image for Stack Overflow -->
-
-			<img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
-
+				<a href="https://stackexchange.com/users/12198639/msimon">
+					<img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
+				</a>
 
 		</aside>
 
