@@ -21,9 +21,9 @@
 
 			<!-- Creating the nav to hold the top level nav elements-->
 
-			<nav>
-				<a cla href="index1.html" class="navigation About-Nav">About</a>
-				<a href="portfolio.html" class="navigation Portfolio-Nav">Portfolio</a>
+			<nav class="nav-class">
+				<a cla href="index1.html" class="navigation About-Nav">About  |</a>
+				<a href="portfolio.html" class="navigation Portfolio-Nav">Portfolio  |</a>
 				<a href="Contact.html" class="navigation Contact-Nav" >Contact</a>
 			</nav>
 
@@ -38,78 +38,75 @@
 
 		<div class="Section-Header">
 
+			<!-- Creating a section for the "About Me Header" -->
 
-    <!-- Creating a div that will contain the form -->
+			<section class="Main-Content-Header">
+				<h1>Contact Me</h1>
+			</section>
 
-    <div class="Section-Header">
+			<!-- Creating a form for the content of the contact me section -->
 
-      <!-- Creating a section for the "About Me Header" -->
+			<form action="https://google.com" id="form-name">
+				<!-- Adding the Name Field to the form -->
 
-      <section class="Main-Content-Header">
-        <h1>Contact</h1>
-      </section>
+				<p>Name
+					<br>
+					<input type="text" name="Name" maxlength="120" id="contact-name"/>
+				</p>
 
-      <!-- Creating a form for the content of the contact me section -->
+				<!-- Adding the email Field to the form -->
 
-      <form action="https://google.com" id="form-name">
-        <!-- Adding the Name Field to the form -->
+				<p>Email
+					<br>
+					<input type="text" name="Email" maxlength="120" id="contact-email"/>
+				</p>
 
-        <p>Name
-          <br>
-          <input type="text" name="Name" maxlength="120" id="contact-name"/>
-        </p>
+				<!-- Adding the message Field to the form -->
 
-        <!-- Adding the email Field to the form -->
+				<p>Message
+					<br>
+					<textarea name="Message" id="contact-message"></textarea>
+				</p>
 
-        <p>Email
-          <br>
-          <input type="text" name="Email" maxlength="120" id="contact-email"/>
-        </p>
+				<button type="submit">Submit</button>
+		</div>
 
-        <!-- Adding the message Field to the form -->
+			<!-- Creating an aside for Connecting with me-->
 
-        <p>Message
-          <br>
-          <textarea name="Message" id="contact-message"></textarea>
-        </p>
-    </div>
+		<aside class="Connect">
 
-		<!-- Creating an aside for Connecting with me-->
+			<!-- Creating a section for the Connect with Me Text-->
 
-	<aside class="Connect">
+			<section class="Main-Content-Header">
+				<h2>Connect with Me</h2>
+			</section>
 
-		<!-- Creating a section for the Connect with Me Text-->
+			<!-- Adding image for GitHub -->
 
-		<section class="Main-Content-Header">
-			<h2>Connect with Me</h2>
-		</section>
+			<section class="Connect-links">
+				<a href="https://github.com/mjsimon91">
+					<img src="images/github.png" width="58px" height="58px" id="github">
+				</a>
+				<!-- Adding image for LinkedIn -->
 
-		<!-- Adding image for GitHub -->
+				<a href="https://www.linkedin.com/in/matthew-simon-9bba3b29/">
+					<img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
+				</a>
+				<!-- Adding image for Stack Overflow -->
 
-		<section class="Connect-links">
-			<a href="https://github.com/mjsimon91">
-				<img src="images/github.png" width="58px" height="58px" id="github">
-			</a>
-			<!-- Adding image for LinkedIn -->
+				<a href="https://stackexchange.com/users/12198639/msimon">
+					<img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
+				</a>
+			</section>
+		</aside>
 
-			<a href="https://www.linkedin.com/in/matthew-simon-9bba3b29/">
-				<img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
-			</a>
-			<!-- Adding image for Stack Overflow -->
+	</div>
 
-			<a href="https://stackexchange.com/users/12198639/msimon">
-				<img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
-			</a>
+	<!-- Creating a footer -->
 
-	</aside>
-
-</div>
-
-<!-- Creating a footer -->
-
-<footer>
-	<p>Copyright &copy; 2017 Matthew Simon</p>
-</footer>
+	<footer>
+		<p>Copyright &copy; 2017 Matthew Simon</p>
+	</footer>
 
 </body>
 </html>

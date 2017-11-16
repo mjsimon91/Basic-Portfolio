@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio</title>
+	<title>Basic-Portfolio</title>
+	<link rel="stylesheet"  type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -13,96 +15,107 @@
 
 			<!-- Creating a div container that will have my name in it-->
 
-			<div class="My-Name">
+			<div class="My-Name-Container">
 				<h1>Matthew Simon</h1>
 			</div>
 
 			<!-- Creating the nav to hold the top level nav elements-->
 
-			<nav>
-				<a href="index1.html" class="About-Nav">About</a>
-				<a href="portfolio.html" class="Portfolio-Nav">Portfolio</a>
-				<a href="Contact.html" class="Contact-Nav" >Contact</a>
+			<nav class="nav-class">
+				<a cla href="index1.html" class="navigation About-Nav">About  |</a>
+				<a href="portfolio.html" class="navigation Portfolio-Nav">Portfolio  |</a>
+				<a href="Contact.html" class="navigation Contact-Nav" >Contact</a>
 			</nav>
 
 		</div>
 	</header>
-  <div class="body-container">
 
-    <!-- Creating a div that will contain the form -->
+	<!-- Creating a div for the body that will hold my content -->
 
-    <div id="body-container">
+	<div class="body-container clearfix">
 
-      <!-- Creating a section for the "About Me Header" -->
+		<!-- Creating a div that will contain the About me text and my image -->
 
-      <section>
-        <h1>Portfolio</h1>
-      </section>
+		<div class="Section-Header">
 
-      <!-- Creating a div for my projects -->
+			<!-- Creating a section for the "About Me Header" -->
+
+			<section class="Main-Content-Header">
+				<h1>About Me</h1>
+			</section>
+
+			<!-- Creating a section for the content of the about me section -->
+
+			<!-- Creating a div for my projects -->
       <div class="projects">
 
         <!-- Creating all the boxes that will contain my projects -->
 
         <figure class="box box-1">
           <h1>OnArrival</h1>
-          <img src="images/OnArrival.png" width="191px" height="144px">
+          <img src="images/OnArrival.png" width="275px" height="200px">
         </figure>
 
         <figure class="box box-2">
           <h1>SocialWall</h1>
-          <img src="images/sw.png" width="191px" height="144px">
+          <img src="images/sw.png" width="275px" height="200px">
         </figure>
 
         <figure class="box box-3">
           <h1>OnSite Solutions</h1>
-          <img src="images/OA-icon.png" width="191px" height="144px">
+          <img src="images/OA-icon.png" width="275px" height="200px">
         </figure>
 
         <figure class="box box-4">
           <h1>Analytics</h1>
-          <img src="images/mixpanel.png" width="191px" height="144px">
+          <img src="images/mixpanel.png" width="275px" height="200px">
         </figure>
 
         <figure class="box box-5">
           <h1>Localization</h1>
-          <img src="images/phraseapp.jpg" width="191px" height="144px">
+          <img src="images/phraseapp.jpg" width="275px" height="144px">
         </figure>
 
       </div>
 
-      <!-- Creating an aside for Connecting with me-->
+		</div>
 
-    <aside class="Connect">
+			<!-- Creating an aside for Connecting with me-->
 
-      <!-- Creating a section for the Connect with Me Text-->
+		<aside class="Connect">
 
-      <section>
-        <h1>Connect with Me</h1>
-      </section>
+			<!-- Creating a section for the Connect with Me Text-->
 
-      <!-- Adding image for GitHub -->
+			<section class="Main-Content-Header">
+				<h2>Connect with Me</h2>
+			</section>
 
-      <img src="images/github.png" width="58px" height="58px" id="github">
+			<!-- Adding image for GitHub -->
 
-      <!-- Adding image for LinkedIn -->
+			<section class="Connect-links">
+				<a href="https://github.com/mjsimon91">
+					<img src="images/github.png" width="58px" height="58px" id="github">
+				</a>
+				<!-- Adding image for LinkedIn -->
 
-      <img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
+				<a href="https://www.linkedin.com/in/matthew-simon-9bba3b29/">
+					<img src="images/linkedin.png" width="58px" height="58px" id="linkedin">
+				</a>
+				<!-- Adding image for Stack Overflow -->
 
-      <!-- Adding image for Stack Overflow -->
+				<a href="https://stackexchange.com/users/12198639/msimon">
+					<img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
+				</a>
+			</section>
+		</aside>
 
-      <img src="images/stackoverflow.png" width="58px" height="58px" id="stackoverflow">
+	</div>
 
+	<!-- Creating a footer -->
 
-    </aside>
+	<footer>
+		<p>Copyright &copy; 2017 Matthew Simon</p>
+	</footer>
 
-  </div>
-
-  <!-- Creating a footer -->
-
-  <footer>
-    <p>Copyright &copy; 2017 Matthew Simon</p>
-  </footer>
-
-  </body>
+</body>
 </html>

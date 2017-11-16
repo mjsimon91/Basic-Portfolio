@@ -1,7 +1,10 @@
 /* Adding a background image */
 
 body {
-  background-image: url(/Users/msimon/Basic-Portfolio/images/background.png);
+  background-image: url(../images/background.png);
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 /* Adding the CSS for the header*/
@@ -51,19 +54,6 @@ header nav {
 }
 
 /* Adding the correct border to the nav links as well as a margin */
-
-.About-Nav {
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: #999999;
-
-}
-
-.Portfolio-Nav {
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: #999999;
-}
 
 
 /* This is the end of the CSS for the header elements */
@@ -132,17 +122,18 @@ img {
 }
 
 footer {
-  height: 65px;
   border-top-style: solid;
   border-top-width: thick;
   border-top-color: #4aaaa5;
   background-color: #666666;
   text-align: center;
-  line-height: 65px;
   color: white;
-  position: absolute;
-  bottom: 0%;
   width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
 }
 
 html: {
@@ -181,4 +172,48 @@ h2 {
   width: 590px;
   height: 100px;
   margin-top: 8px;
+}
+
+.box {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 275px;
+}
+
+.box-1 {
+  float: left;
+}
+
+.box-2 {
+  float: left;
+}
+
+.box-3 {
+  float: left;
+}
+
+.box-4 {
+  float: right;
+}
+
+.box-5 {
+  float: left;
+}
+
+.box h1 {
+  background-color: #4aaaa5;
+  height: 25%;
+  width: 255px;
+  font-size: 32px;
+  color: white;
+  position: relative;
+  top: 190px;
+  padding: 10px;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  margin:10px;
+  background-color: #4aaaa5;
 }
